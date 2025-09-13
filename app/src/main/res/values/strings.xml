@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RahulYadav-Upstox</string>
+    <string name="currency_format">₹%s</string>
+    <string name="percentage_format">%.2f%%</string>
+    <string name="error_loading_data">Error loading data. Please try again.</string>
+    <string name="no_data_available">No data available</string>
+    <string name="portfolio">Portfolio</string>
+</resources>
