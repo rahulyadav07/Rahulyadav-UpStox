@@ -9,20 +9,14 @@ import com.rahulyadav.rahulyadav_upstox.databinding.ItemHoldingBinding
 
 import com.rahulyadav.rahulyadav_upstox.utils.DisplayFormatter
 
-/**
- * RecyclerView adapter for displaying holdings list
- * Follows Single Responsibility Principle - only handles UI binding
- * Uses View Binding for type safety and better performance
- */
+
 class HoldingsAdapter(
     private val context: Context,
     private var stocks: List<Stocks> = emptyList(),
     private val onItemClickListener: ((Stocks) -> Unit)? = null
 ) : RecyclerView.Adapter<HoldingsAdapter.HoldingViewHolder>() {
 
-    /**
-     * Update the holdings list and notify adapter
-     */
+
     fun updateHoldings(newStocks: List<Stocks>) {
         stocks = newStocks
         notifyDataSetChanged()

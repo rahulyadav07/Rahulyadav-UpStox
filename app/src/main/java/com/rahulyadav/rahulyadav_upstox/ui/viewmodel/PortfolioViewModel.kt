@@ -20,10 +20,7 @@ class PortfolioViewModel(
         _uiState.value = PortfolioUiState.Loading
         loadUserHoldings()
     }
-    
-    /**
-     * Load user holdings from the API
-     */
+
     override fun loadUserHoldings() {
         viewModelScope.launch {
             _uiState.value = PortfolioUiState.Loading
